@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GameHub online store for video games." />
+  <title>GameHub | Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="logo">
+        <img src="images/game-hub-logo.png" alt="Game HUT logo" />
+    </a>
+      <a href="/checkout/">Basket</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>GameHUB</h1>
+      <p>Explore our collection of video games.</p>
+    </section>
+
+    <section class="filters">
+      <label for="genre-filter">Filter by genre:</label>
+      <select id="genre-filter">
+        <option value="all">All games</option>
+      </select>
+    </section>
+
+    <section>
+      <h2>Products</h2>
+
+      <div id="loader" class="loader">Loading products...</div>
+      <div id="error-message" class="error-message"></div>
+      <div id="products-container" class="products-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 GameHub</p>
+  </footer>
+
+  <script type="module" src="js/index.js"></script>
+</body>
+</html>
