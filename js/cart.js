@@ -62,3 +62,21 @@ export function getCartTotal() {
     return total + getProductPrice(product) * product.quantity;
   }, 0);
 }
+
+export function getCartItemCount() {
+  const cart = getCart();
+
+  return cart.reduce(function (total, product) {
+    return total + product.quantity;
+  }, 0);
+}
+
+export function updateCartCount() {
+  const cartCount = document.querySelector("#cart-count");
+
+  if (!cartCount) {
+    return;
+  }
+
+  cartCount.textContent = getCartItemCount();
+}

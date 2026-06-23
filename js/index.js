@@ -1,4 +1,5 @@
 import { fetchProducts } from "./api.js";
+import { updateCartCount } from "./cart.js";
 
 const productsContainer = document.querySelector("#products-container");
 const loader = document.querySelector("#loader");
@@ -108,4 +109,5 @@ async function initializeHomepage() {
 
 genreFilter.addEventListener("change", filterProductsByGenre);
 
+updateCartCount();
 initializeHomepage();

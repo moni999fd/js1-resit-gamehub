@@ -1,5 +1,5 @@
 import { fetchProductById } from "./api.js";
-import { addToCart } from "./cart.js";
+import { addToCart, updateCartCount } from "./cart.js";
 
 const productContainer = document.querySelector("#product-container");
 const loader = document.querySelector("#loader");
@@ -54,6 +54,7 @@ function displayProduct(product) {
 
   addToCartButton.addEventListener("click", function () {
     addToCart(product);
+    updateCartCount();
     cartMessage.textContent = `${product.title} was added to your basket.`;
   });
 }
@@ -81,4 +82,5 @@ async function initializeProductPage() {
   }
 }
 
+initializeProductPage();updateCartCount();
 initializeProductPage();

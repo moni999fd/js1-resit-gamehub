@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="View your GameHub basket and checkout." />
+  <title>GameHub | Checkout</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../" class="logo">
+        <img src="../images/game-hub-logo.png" alt="GameHub logo" />
+      </a>
+      <a href="../checkout/" class="basket-link">
+        Basket <span id="cart-count" class="cart-count">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <a href="../">← Continue shopping</a>
+
+    <section class="page-intro">
+      <h1>Your Basket</h1>
+      <p>Review your games before completing your order.</p>
+    </section>
+
+    <section id="checkout-container"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 GameHub</p>
+  </footer>
+
+  <script type="module" src="../js/checkout.js"></script>
+</body>
+</html>
