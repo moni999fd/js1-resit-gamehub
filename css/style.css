@@ -52,10 +52,13 @@ main {
 }
 
 .page-intro h1 {
+  display: inline-block;
   margin-bottom: 8px;
   font-size: 2.5rem;
   border-left: 6px solid var(--gamehub-green);
+  border-right: 6px solid var(--gamehub-green);
   padding-left: 16px;
+  padding-right: 16px;
 }
 
 .page-intro p {
