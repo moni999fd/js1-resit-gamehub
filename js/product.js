@@ -44,7 +44,7 @@ function displayProduct(product) {
         <p><strong>Released:</strong> ${product.released}</p>
         ${createPriceHtml(product)}
         <button id="add-to-cart-button">Add to basket</button>
-        <p id="cart-message" class="cart-message"></p>
+        <p id="cart-message" class="cart-message" aria-live="polite"></p>
       </div>
     </article>
   `;
